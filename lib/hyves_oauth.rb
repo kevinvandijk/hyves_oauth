@@ -1,0 +1,3 @@
+module HyvesOauth
+  # Your code goes here...
+end
