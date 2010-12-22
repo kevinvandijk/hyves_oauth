@@ -1,3 +1,4 @@
+require "hyves_oauth/client"
+
 module HyvesOauth
-  # Your code goes here...
 end
