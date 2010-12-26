@@ -5,7 +5,7 @@ require "hyves_oauth/version"
 
 Gem::Specification.new do |s|
   s.name        = "hyves_oauth"
-  s.version     = HyvesOauth::VERSION
+  s.version     = HyvesOAuth::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Kevin van Dijk"]
   s.email       = ["kevin@madkangaroo.com"]
