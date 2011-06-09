@@ -24,8 +24,8 @@ module HyvesOAuth
       @access_token
     end
         
-    def update(message)
-      post("/", {"ha_method" => "wwws.create", "emotion" => message, "visibility" => "default"})
+    def update(message, options = {})
+      post("/", {"ha_method" => "wwws.create", "emotion" => message, "visibility" => "default"}.merge(options))
     end
     
     def get_logged_in

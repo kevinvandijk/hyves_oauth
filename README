@@ -1,0 +1,37 @@
+hyves_oauth may be used to connect Ruby to the Dutch social networking
+website Hyves using the OAuth authentication protocol.
+
+Sample usage:
+
+#####
+
+  client = HyvesOAuth::Client.new({
+    :consumer_key => 'MY_CONSUMER_KEY',
+    :consumer_secret => 'MY_CONSUMER_SECRET',
+    :token => 'ACCESS_TOKEN',
+    :secret => 'ACCESS_TOKEN_SECRET'
+  })
+  response = client.update('Developing hyves_oauth gem', {'where' => 'Home', 'visibility' => 'public'})
+
+#####
+
+For more hyves_oauth documentation, check
+http://rubydoc.info/gems/hyves_oauth/frames
+
+The documentation for the Hyves Data-API may be found at
+http://www.hyves-developers.nl/documentation/data-api/home
+
+hyves_oauth currently supports 2 of those API calls:
+- users.getLoggedin
+- wwws.create
+
+To register an application and apply for Hyves consumer keys, go to
+http://www.hyves.nl/developer/
+
+To experiment with the API, and fetch your own access token, hit the
+'Console' link after you've registered your application.
+
+To add functionality to hyves_oauth, fork this project at
+https://github.com/kevinvandijk/hyves_oauth or
+https://github.com/ohreally/hyves_oauth, make your changes, and send
+a pull request.
